@@ -5,7 +5,7 @@
 }
 
 body{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Fredoka', sans-serif;
 }
@@ -25,28 +25,44 @@ header h1{
 
 /* main */
 
-.container{
-    margin-top: 50px;
+span{
+    display: block;
+}
+
+.container, {
     clear: both;
 }
 
+/* card general */
+
 .card{
     float: left;
-    width: calc(100%/3 - 30px);
+    width: calc(100%/3 - 40px);
 
     background-color: #0e0f17;
     color: white;
 
-    margin-left: 15px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
+/* card img */
 
 .card img{
     height: 100px;
     float: left;
 }
 
+/* card info */
+
 .info{
-    padding-top: 10px;
-    padding-left: 110px;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+/* modifica link */
+
+span > a{
+    text-decoration: none;
+    color: #0096da;
 }
