@@ -25,3 +25,28 @@ header h1{
 
 /* main */
 
+.container{
+    margin-top: 50px;
+    clear: both;
+}
+
+.card{
+    float: left;
+    width: calc(100%/3 - 30px);
+
+    background-color: #0e0f17;
+    color: white;
+
+    margin-left: 15px;
+}
+
+
+.card img{
+    height: 100px;
+    float: left;
+}
+
+.info{
+    padding-top: 10px;
+    padding-left: 110px;
+}
