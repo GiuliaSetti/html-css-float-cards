@@ -10,6 +10,12 @@ body{
     font-family: 'Fredoka', sans-serif;
 }
 
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
 /* titolo e paragrafo */
 
 header{
@@ -29,17 +35,14 @@ span{
     display: block;
 }
 
-.container::after {
-    content: '';
-    clear: both;
-    display: block;
-}
+
 
 /* card general */
 
 .card{
     float: left;
     width: calc(100%/3 - 40px);
+    min-width: 360px;
 
     background-color: #0e0f17;
     color: white;
@@ -60,13 +63,17 @@ span{
 /* card info */
 
 .info{
-    padding-top: 20px;
+    padding-top: 18px;
     padding-left: 120px;
+}
+
+.info > div{
+    padding-top: 4px;
 }
 
 /* modifica link */
 
-span > a{
+div > a{
     text-decoration: none;
     color: #0096da;
 }
@@ -74,6 +81,6 @@ span > a{
 /* footer */
 
 footer{
-    margin-top: 100px;
+    padding: 30px;
     text-align: center;
 }
