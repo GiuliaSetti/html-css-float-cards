@@ -87,4 +87,10 @@ li > a{
     text-decoration: none;
 }
 
+/* footer */
 
+.sign{
+    padding: 20px;
+    text-align: center;
+    color: #0f0e17;
+}
