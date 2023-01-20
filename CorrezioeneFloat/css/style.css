@@ -16,6 +16,14 @@ body{
     margin: 0 auto;
 }
 
+/* il clearfix lo do al padre diretto dell'elemento col float */
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
 /* titolo e intestazione */
     
 header{
@@ -30,11 +38,50 @@ h1{
 
 /* main */
 
+
+
 .col{
-    height: 100px;
     width: 33%;
 
     float: left;
 
     background-color: grey;
 }
+
+.card{
+    background-color: #0f0e17;
+    color: white;
+}
+
+/* altezza all'immagine e non alla card */
+
+.card img{
+    height: 100px;
+
+    float: left;
+}
+
+/* attribuisco il clearfix anche alla card */
+
+.card .info{
+    float: left;
+
+    padding-left: 1em;
+    padding-top: 8px;
+}
+
+.card .info ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+
+li > a{
+    color: #47bce8;
+    text-decoration: none;
+}
+
+
